@@ -10,7 +10,7 @@
  }
 
 .s1, .s2, .s3, .s4, .s5 {
-    height: 100vh;
+    height: 860px;
 }
 
 .s1 {
@@ -76,30 +76,33 @@
     font-size: 50px;
     color: #363e57;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .hero-header {
     font-family: 'Arial Black', sans-serif;
     color: #FFF;
     position: absolute;
-    font-size: 6vw;
+    font-size: 90px;
     text-transform: uppercase;
     letter-spacing: -10px;
 }
 
 .hero-header-1 {
     top: 0;
-    left: 150px;
+    left: 15%;
+    color: #B8333B;
 }
 
 .hero-header-2 {
-    top: 370px;
+    top: 310px;
     left: 0;
 }
 
 .hero-header-3 {
-    top: 520px;
-    left: 400px;
+    top: 550px;
+    padding-left: 20%;
+    color: #B8333B;
 }
 
 .hero-left {
@@ -109,12 +112,13 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    width: 100%;
 }
 
 .hero-left-img {
     background: url("../images/blackpink/blackpink_guess_fw_2018_all_1.jpg") no-repeat;
     background-size: cover;
-    background-position: -110px 0;
+    background-position: center center;
     height: 80%;
     width: 80%;
     box-shadow: 20px 20px #11141C;
@@ -123,9 +127,9 @@
 .hero-right {
     background-color: #DBD9DA;
     grid-area: h-right;
-    background: url("../images/blackpink/blackpink_guess_fw_2018_all_2.jpg");
+    background: url("../images/blackpink/blackpink_guess_fw_2018_all_2.jpg") no-repeat;
     background-size: cover;
-    background-position: -120px 0;
+    background-position: center center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,7 +152,11 @@
 }
 
 .s2 {
-    background-color: #B8333B;
+    background-color: #DBD9DA;
+    display: grid;
+    grid-template-areas:
+        "space content image space";
+    grid-template-columns: 1fr 3fr 2fr 1fr;
 }
 
 .s3 {
