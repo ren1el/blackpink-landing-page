@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
  body { 
@@ -10,7 +11,7 @@
  }
 
 .s1, .s2, .s3, .s4, .s5 {
-    height: 860px;
+    height: 900px;
 }
 
 .s1 {
@@ -20,7 +21,7 @@
         "navbar navbar"
         "h-left h-right"
         "footer footer";
-    grid-template-rows: 1fr 3fr 19fr 1fr;
+    grid-template-rows: 1fr 3fr 19fr;
 }
 
 .topbar {
@@ -152,21 +153,202 @@
 }
 
 .s2 {
-    background-color: #DBD9DA;
-    display: grid;
-    grid-template-areas:
-        "space content image space";
-    grid-template-columns: 1fr 3fr 2fr 1fr;
+    background: url("../images/blackpink/blackpink_guess_fw_2018_all_5.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-color: #EEE;
+}
+
+.s2-header {
+    font-family: 'Arial Black', sans-serif;
+    color: #000;
+    position: absolute;
+    font-size: 90px;
+    text-transform: lowercase;
+    letter-spacing: -10px;
+    line-height: 80px;
+}
+
+.s2-header-1 {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 10%;
 }
 
 .s3 {
     background-color: #1D212F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 30px solid #FFF;
+}
+
+.s3-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s3-img-1 {
+    background: url("../images/blackpink/blackpink_guess_fw_2018_all_jennie.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.s3-img-2 {
+    background: url("../images/blackpink/blackpink_guess_fw_2018_all_rose.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.s3-img-3 {
+    background: url("../images/blackpink/blackpink_guess_fw_2018_all_lisa.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.s3-img-4 {
+    background: url("../images/blackpink/blackpink_guess_fw_2018_all_jisoo.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 
 .s4 {
     background-color: #DBD9DA;
 }
 
+.s4-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s4-img-1 {
+    background: url("../images/blackpink/blackpink_guess_fw_2018_all_3.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+
+.s4-img-2 {
+    background: url("../images/blackpink/blackpink_guess_fw_2018_all_4.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+
 .s5 {
-    background-color: #A7745B;
+    background-color: #1F2637;
+    display: grid;
+    grid-template-areas:
+        "pictures"
+        "footer"
+        "bottombar";
+    grid-template-rows: 10fr 4fr 1fr;
+    color: #FFF;
+    padding-top: 20px;
+}
+
+.s5 a {
+    display: inline-block;
+}
+
+.s5-inline-images {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.s5-inline-images img {
+    width: 15%;
+    object-fit: cover;
+    box-shadow: 10px 10px #11141C;
+}
+
+.s5-pictures {
+    grid-area: pictures;
+    background-color: #1F2637;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s5-pictures h1 {
+    display: block;
+    font-size: 55px;
+}
+
+.s5-footer {
+    grid-area: footer;
+    background-color: #EEE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 17px;
+}
+
+.s5-footer ul {
+    list-style-type: none;
+}
+
+.s5-footer li {
+    height: 35px;
+}
+
+.s5-footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.s5-footer a:hover {
+    border-bottom: 2px solid #333;
+}
+
+.s5-bottombar {
+    grid-area: bottombar;
+    background-color: #1F2637;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 12px;
+}
+
+.s5-bottombar i {
+    font-size: 45px;
+}
+
+.s5-bottombar a {
+    color: #FFF;
+}
+
+input[type="text"] {
+    width: 25%;
+    height: 40px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2px;
+    outline: none;
+}
+
+.s5 button {
+    font-size: 15px;
+    border: none;
+    letter-spacing: 2px;
+    width: 20%;
+    padding: 10px;
+    top: 255px;
+    color: #FFF;
+    background-color: #1F2637; 
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    border: 3px solid #FFF;
 }
